@@ -27,10 +27,12 @@ An network with one input node, one hidden layer with 3 node and two output node
 All numbers represent the weights for each connection
 
     Network = {
-        {            -- 1x3 Matrix
-            {0.548}, -- input to hidden node 1
-            {0.847}, -- input to hidden node 2
-            {0.22}   -- input to hidden node 3
+        {               -- 1x3 Matrix
+            {
+                0.548,  -- input to hidden node 1
+                0.847,  -- input to hidden node 2
+                0.22    -- input to hidden node 3
+            }
         },
         {               -- 3x2 Matrix
             {
