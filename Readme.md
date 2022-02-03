@@ -23,15 +23,16 @@ An network with one input node, one hidden layer with 3 node and two output node
     ( input ) ---<---( hidden node 2 )----X--<
                   \                      / \  \
                    \-( hidden node 3 )--/---( output node 2 )
-_
+
+All numbers represent the weights for each connection
 
     Network = {
-        {
+        {            -- 1x3 Matrix
             {0.548}, -- input to hidden node 1
             {0.847}, -- input to hidden node 2
             {0.22}   -- input to hidden node 3
         },
-        {
+        {               -- 3x2 Matrix
             {
                 -0.324, -- hidden node 1 to output node 1
                 0.1,    -- hidden node 1 to output node 2
@@ -46,4 +47,10 @@ _
             }
         }
     } 
+
+## Maths
+
+The chosen activation function for neurons is the Sigmoid function
+
+    1 / (1 + math.exp(-x))
 
